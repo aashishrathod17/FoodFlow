@@ -54,7 +54,7 @@ Restaurant and menu data are loaded dynamically from Firestore instead of being 
 
 ## 📱 Application Flow
 
-```text
+
 Splash Screen
       ↓
 Login
