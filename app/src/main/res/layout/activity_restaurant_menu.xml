@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Header -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvMenuRestaurantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza Palace"
+            android:textColor="@color/text_primary"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMenuRestaurantInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="⭐ 4.5  •  25 min  •  Italian"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Menu Title -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Menu"
+        android:textColor="@color/text_primary"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <!-- Food List -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMenuItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:clipToPadding="false" />
+
+    <!-- Cart Button -->
+
+    <Button
+        android:id="@+id/btnViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/primary"
+        android:text="View Cart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

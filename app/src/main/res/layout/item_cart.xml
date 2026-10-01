@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/bg_restaurant_card"
+    android:elevation="2dp"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/ivCartFoodImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/margherita_pizza"
+        android:contentDescription="Food Image" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="14dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCartFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Margherita Pizza"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCartFoodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="₹199"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDecrease"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:backgroundTint="@color/white"
+                android:text="-"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp" />
+
+            <TextView
+                android:id="@+id/tvCartQuantity"
+                android:layout_width="35dp"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnIncrease"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:backgroundTint="@color/white"
+                android:text="+"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCartItemTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Item Total: ₹199"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

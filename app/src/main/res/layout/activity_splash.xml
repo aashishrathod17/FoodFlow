@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="30dp">
+
+    <ImageView
+        android:id="@+id/ivFoodFlowLogo"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/foodflow_logo"
+        android:scaleType="fitCenter"
+        android:contentDescription="FoodFlow Logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="FoodFlow"
+        android:textColor="@color/text_primary"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Delicious food, delivered to you"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/bg_restaurant_card"
+    android:elevation="3dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivRestaurantImage"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizza_palace"
+        android:contentDescription="Restaurant Image" />
+
+    <TextView
+        android:id="@+id/tvRestaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza Palace"
+        android:textColor="@color/text_primary"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRestaurantCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Italian • Pizza"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvRestaurantInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="⭐ 4.5  •  25 min"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+</LinearLayout>
