@@ -4,6 +4,8 @@ FoodFlow is a simple food delivery Android application built using **Java and Fi
 
 The app allows users to create an account, browse restaurants, view restaurant menus, add food items to a cart, enter delivery details, select a payment method, and place an order.
 
+---
+
 ## ✨ Features
 
 - 🔐 User Registration & Login
@@ -22,6 +24,8 @@ The app allows users to create an account, browse restaurants, view restaurant m
 - 👤 Firebase Authentication
 - 🚀 Splash Screen
 
+---
+
 ## 🛠️ Technologies Used
 
 - **Java**
@@ -33,17 +37,22 @@ The app allows users to create an account, browse restaurants, view restaurant m
 - **Android SDK**
 - **Git & GitHub**
 
+---
+
 ## 🔥 Firebase Integration
 
-FoodFlow uses Firebase for:
+FoodFlow uses Firebase for authentication and cloud database functionality.
 
 ### Firebase Authentication
+
 Used for:
+
 - User Registration
 - User Login
 - Email & Password Authentication
 
 ### Cloud Firestore
+
 Used for storing and loading:
 
 - Restaurant information
@@ -52,9 +61,11 @@ Used for storing and loading:
 
 Restaurant and menu data are loaded dynamically from Firestore instead of being completely hardcoded inside the application.
 
+---
+
 ## 📱 Application Flow
 
-
+```text
 Splash Screen
       ↓
 Login
@@ -78,18 +89,25 @@ Delivery Address
 Payment Selection
       ↓
 Place Order
+```
 
-🏪 Restaurants
+---
+
+## 🏪 Restaurants
 
 The application currently includes sample restaurants such as:
 
-🍕 Pizza Palace
-🍔 Burger House
-🥡 Dragon Wok
+- 🍕 Pizza Palace
+- 🍔 Burger House
+- 🥡 Dragon Wok
 
 Restaurant and menu information is managed through Firebase Firestore.
 
-🗂️ Project Structure
+---
+
+## 🗂️ Project Structure
+
+```text
 FoodFlow
 │
 ├── app
@@ -107,42 +125,85 @@ FoodFlow
 ├── build.gradle
 ├── settings.gradle
 └── README.md
+```
 
+---
 
-🚀 How to Run
-Clone this repository:
+## 🚀 How to Run
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/aashishrathod17/FoodFlow.git
-Open the project in Android Studio.
-Connect an Android device or start an Android Emulator.
-Sync the Gradle project.
-Run the application.
+```
 
-Firebase configuration is required to run the Firebase features. The Firebase configuration file is intentionally not included in the public repository.
+### 2. Open the project
 
-🔐 Security Note
+Open the cloned project in **Android Studio**.
 
-Firebase configuration files containing project-specific credentials are excluded from this repository using .gitignore.
+### 3. Sync the project
 
-Firebase Authentication handles user passwords securely. Passwords are not stored manually in the application's Firestore database.
+Allow Android Studio to sync the Gradle dependencies.
 
-🎯 Project Purpose
+### 4. Configure Firebase
+
+The Firebase configuration file is intentionally not included in the public repository.
+
+To run Firebase features, add your Firebase configuration file:
+
+```text
+app/google-services.json
+```
+
+### 5. Run the application
+
+Connect an Android device or start an Android Emulator and run the application from Android Studio.
+
+---
+
+## 🔐 Security Note
+
+Firebase configuration files containing project-specific credentials are excluded from the public repository using `.gitignore`.
+
+Firebase Authentication handles user passwords securely.
+
+Passwords are not manually stored in the application's Firestore database.
+
+---
+
+## 🎯 Project Purpose
 
 FoodFlow was developed as an Android development project to practice:
 
-Android application development
-Java programming
-XML UI design
-Firebase integration
-Authentication
-Cloud Firestore
-RecyclerView
-Git & GitHub
-Multi-screen application navigation
-👨‍💻 Developer
+- Android application development
+- Java programming
+- XML UI design
+- Firebase integration
+- Firebase Authentication
+- Cloud Firestore
+- RecyclerView
+- Multi-screen application navigation
+- Cart management
+- Git & GitHub
 
-Aashish Rathod
+---
 
-B.Sc. IT Student
+## 👨‍💻 Developer
+
+**Aashish Rathod**
+
+B.Sc. IT Student  
 Noble University, Junagadh
 
-GitHub: @aashishrathod17
+**GitHub:**  
+https://github.com/aashishrathod17
+
+**Linkedin:**  
+https://www.linkedin.com/in/aashish-rathod-5665b03a7/?isSelfProfile=true
+
+
+---
+
+## 📄 License
+
+This project was created for educational and portfolio purposes.
